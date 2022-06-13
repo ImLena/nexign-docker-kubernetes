@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web
+  labels:
+    env: test
+spec:
+  replicas: 2
+spec:
+  containers:
+  - name: web 
+    image: imlena/web:1.0.0
+    imagePullPolicy: IfNotPresent
+    ports:
+    - containerPort: 8000
