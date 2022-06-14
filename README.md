@@ -16,6 +16,6 @@
 *kubectl apply -f manifest.yaml*  
   
 Чтобы обеспечить доступ к web-приложению внутри кластера пробросим порт:  
-*kubectl port-forward --address 0.0.0.0 pod/web 8080:8000*  
+*kubectl port-forward --address 0.0.0.0 deployment/web 8080:8000*  
   
 Теперь веб-приложение доступно локально по адресу http://127.0.0.1:8080/hello_docker.html
