@@ -1,0 +1,104 @@
+Name:         web-6fffc5479c-42zb4
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Tue, 14 Jun 2022 17:54:51 +0300
+Labels:       env=test
+              pod-template-hash=6fffc5479c
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.4
+IPs:
+  IP:           172.17.0.4
+Controlled By:  ReplicaSet/web-6fffc5479c
+Containers:
+  web:
+    Container ID:   docker://3682bf049ee0825df769c98f58e6ac06732b5f9cd4a8a50b132f88bc76371f9b
+    Image:          imlena/web:1.0.0
+    Image ID:       docker-pullable://imlena/web@sha256:e5eafd3d7330b180f54edee5741e87f9e85ba8ab01ca189d79d9cb706267294a
+    Port:           8000/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 14 Jun 2022 17:54:52 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-4fmsr (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-4fmsr:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  108s  default-scheduler  Successfully assigned default/web-6fffc5479c-42zb4 to minikube
+  Normal  Pulled     108s  kubelet            Container image "imlena/web:1.0.0" already present on machine
+  Normal  Created    108s  kubelet            Created container web
+  Normal  Started    107s  kubelet            Started container web
+
+Name:         web-6fffc5479c-fjgm6
+Namespace:    default
+Priority:     0
+Node:         minikube/192.168.49.2
+Start Time:   Tue, 14 Jun 2022 17:54:51 +0300
+Labels:       env=test
+              pod-template-hash=6fffc5479c
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.3
+IPs:
+  IP:           172.17.0.3
+Controlled By:  ReplicaSet/web-6fffc5479c
+Containers:
+  web:
+    Container ID:   docker://0e7dd39c00bb48ad0130db456d45eee9fea05cae740a2f2fb7712907731a6d45
+    Image:          imlena/web:1.0.0
+    Image ID:       docker-pullable://imlena/web@sha256:e5eafd3d7330b180f54edee5741e87f9e85ba8ab01ca189d79d9cb706267294a
+    Port:           8000/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 14 Jun 2022 17:54:51 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vhmqq (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-vhmqq:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  108s  default-scheduler  Successfully assigned default/web-6fffc5479c-fjgm6 to minikube
+  Normal  Pulled     108s  kubelet            Container image "imlena/web:1.0.0" already present on machine
+  Normal  Created    108s  kubelet            Created container web
+  Normal  Started    107s  kubelet            Started container web
+
