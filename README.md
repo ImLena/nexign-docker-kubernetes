@@ -1,4 +1,4 @@
-# Сборка веб-приложения в виде Doker image и установка в кластер Kubernetes
+# Сборка веб-приложения в виде Docker image и установка в кластер Kubernetes
 
 Создание image:   
 *docker build -t imlena/web:1.0.0 .*  
